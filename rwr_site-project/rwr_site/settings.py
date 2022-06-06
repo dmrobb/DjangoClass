@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-w0$72ve=6**2-oqta*xqhifmn(#fg!hcxva)re2u8l1(hu0gn-
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# DEBUT = False
+# DEBUG = False
 
 ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['127.0.0.1']
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'rwr_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -117,7 +117,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-
+# My_app/static/my_app
 STATIC_URL = 'static/'
 
 # Default primary key field type

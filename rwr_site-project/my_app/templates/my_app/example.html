@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1> Example.html template connected! </h1>
-  </body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>This is inside the block in example.html</h1>
+
+<img src="{% static 'my_app/Django_Reinhardt.jpg'%}" alt="My Image">
+
+
+
+{% endblock content %}

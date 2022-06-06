@@ -7,11 +7,34 @@
   <body>
     <h1>Variable.html</h1>
 
-    <!-- <h2>Her first name was {{ first_name | capfirst}} and her last name was {{last_name | capfirst}}</h2>
-    <h2>{{some_list.1}}</h2>
-    <h2>{{some_dict.inside_key}}</h2>
-    <h3>{# this is a comment #}</h3> -->
-  
+<!-- <ul>
+    {%for item in some_list%}
+  <li><h1>{{item}}</h1></li>
+    {% endfor %}
+</ul>
+<ul>
+    {%for k,v in some_dict.items%}
+  <li><h1>{{k}}</h1></li>
+    {% endfor %}
+</ul> -->
+<!-- {% if user_logged_in %}
+  <h1>Welcome {{first_name}}!</h1>
+{%endif%}
+
+{% if user_logged_in %}
+  <h1>Welcome back, you are logged in</h1>
+{%endif%}
+
+<ul>
+  {% for num in some_list  %}
+      {%if num == 2%}
+        <li>Two</li>
+      {%else%}
+        <li>{{num}}</li>
+      {%endif%}
+  {% endfor%}
+</ul> -->
+
 
   </body>
 
