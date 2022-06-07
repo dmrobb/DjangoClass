@@ -21,6 +21,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('my_app/',include('my_app.urls')),
+    path('office/',include('office.urls')),
 ]
 
 handler404 = 'rwr_site.views.my_custom_page_not_found_view'
