@@ -22,6 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('my_app/',include('my_app.urls')),
     path('office/',include('office.urls')),
+    path('cars/',include('cars.urls')),
+    path('carrental/',include('carrental.urls')),
+    path('classroom/',include('classroom.urls')),
 ]
 
 handler404 = 'rwr_site.views.my_custom_page_not_found_view'

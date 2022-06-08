@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'my_app.apps.MyAppConfig',
     'office.apps.OfficeConfig',
+    'cars.apps.CarsConfig',
+    'carrental.apps.CarrentalConfig',
+    'classroom.apps.ClassroomConfig',
+    
 ]
 
 MIDDLEWARE = [

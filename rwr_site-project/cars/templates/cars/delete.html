@@ -1,0 +1,21 @@
+{% extends 'carsbase.html' %}
+
+{% block content %}
+
+
+<div class="container">
+  <h1>Delete.html</h1>
+  <h2>Ender primary key to delete car!</h2>
+  <form class="" action="" method="POST">
+    {% csrf_token %}
+      <div class="form-group">
+        <label for="pk">PK Number:</label>
+        <input class="form-control" type="text"id="pk" name="pk" value="">
+
+      </div>
+      <input class="btn btn-primary" type="submit" name="submit" value="submit">
+  </form>
+
+</div>
+
+{% endblock content%}

@@ -1,0 +1,23 @@
+{% extends 'carsbase.html' %}
+
+{% block content %}
+
+<div class="container">
+  <h1>Add.html</h1>
+  <h2>Add a new car to the database</h2>
+  <form action ="" method="post">
+     {% csrf_token %}
+    <div class="form-group">
+      <label for="brand">Brand of Car:</label>
+      <input class="form-control" type="text" id="brand" name="brand">
+    </div>
+    <div class="form-group">
+      <label for="year">Year:</label>
+      <input class="form-control" type="text" id="year" name="year" >
+    </div>
+    <br>
+    <input class="btn btn-primary" type="submit" name="submit" value="Submit">
+  </form>
+</div>
+
+{% endblock content%}
