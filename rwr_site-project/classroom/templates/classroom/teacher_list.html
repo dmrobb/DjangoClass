@@ -12,7 +12,10 @@
           <a href="/classroom/teacher_detail/{{teacher.id}}">{{teacher.first_name}} {{teacher.last_name}}</a>
           <ul>
             <li>  <a href="/classroom/update_teacher/{{teacher.id}}">Update</a></li>
-          </ul>    
+            <li> <a href="/classroom/delete_teacher/{{teacher.id}}">Delete</a>   </li>
+
+          </ul>
+
       </li>
         <!-- <li>{{teacher.first_name}} {{teacher.last_name}}</li> -->
       {% endfor %}
